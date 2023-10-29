@@ -75,27 +75,47 @@
   
 //////////////////////////////////////////////////////////////
 
-const dataBase ={
-    muhammad:{
-        login:'muhammad',
-        password: 1234,
-        fullName: 'muhammad saikov'
+// const dataBase ={
+//     muhammad:{
+//         login:'muhammad',
+//         password: 1234,
+//         fullName: 'muhammad saikov'
+//     }
+// }
+
+// console.log('staeted');
+
+// const login =(lg, ps, call)=>{
+//     setTimeout(() =>{
+//     if (dataBase.muhammad.login === lg && dataBase.muhammad.password ==ps) {
+//         return call('welcome to $(dataBase.Muhammad.fullName)')
+//     }
+//     else{
+//         return call(`Malumot Nogri kiritilgan`);
+//     }
+//      },'1000')
+// }
+// login('muhammadali',1234,(usr) => {
+//     console.log(usr);
+//     console.log('finished');
+// })
+
+// ////////////////////////////////////////////////////////////////////////////////
+
+function divide(a, b) {
+    try{
+        if (b === 0) {
+            throw new Error("Nolga bo'lish mumkin emas")
+        }
+        return a / b;
+    }catch (error) {
+        console.error("xatolik yuzaga keldi", error.message);
+        return null;
     }
 }
 
-console.log('staeted');
+const result1 = divide(,2); //Bo'lish natijasi: 4
+const result2 = divide(100,2); //Bo'lish natijasi: null
 
-const login =(lg, ps, call)=>{
-    setTimeout(() =>{
-    if (dataBase.muhammad.login === lg && dataBase.muhammad.password ==ps) {
-        return call('welcome to $(dataBase.Muhammad.fullName)')
-    }
-    else{
-        return call(`Malumot Nogri kiritilgan`);
-    }
-     },'1000')
-}
-login('muhammadali',1234,(usr) => {
-    console.log(usr);
-    console.log('finished');
-})
+console.log("natija 1:", result1);
+console.log("natija 2:", result2);
