@@ -31,8 +31,19 @@ console.log(kobasi(yil));
 
 /////////////////////////////////////////////
 
-// function betterThanAverage(classPoints, yourPoints) {
+function betterThanAverage(classPoints, yourPoints) {
 
-// }
+}
 
 ////////////////////////////////////////////////
+
+const toUpperCase = (name) => {
+    let res = name.split('')
+    result = res.filter((val) => {
+        return val == val.toUpperCase()
+    }).join('')
+    return result 
+}
+
+const name = 'WebBraInAcademy'
+console.log(toUpperCase(name));
