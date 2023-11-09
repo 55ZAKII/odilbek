@@ -11,28 +11,28 @@
 
 ///////////////////////////////////////////
 
-// output : var yil = 2020
-// input : 'kabisa yili'
+output : var yil = 2020
+input : 'kabisa yili'
 
-// output : yil = 2017
-// input : 'kabisa yili emas'
+output : yil = 2017
+input : 'kabisa yili emas'
 
-// function kobasi(yil) {
-//     if (yil === '2020') {
-//         console.log('kabisa yili');
-//         return 2020;
-//     } else {
-//         console.log('kabisa yili emas');
-//         return yil;
-//     }
-// }
+function kobasi(yil) {
+    if (yil === '2020') {
+        console.log('kabisa yili');
+        return 2020;
+    } else {
+        console.log('kabisa yili emas');
+        return yil;
+    }
+}
 
-// console.log(kobasi(yil));
+console.log(kobasi(yil));
 
 /////////////////////////////////////////////
 
-function betterThanAverage(classPoints, yourPoints) {
+// function betterThanAverage(classPoints, yourPoints) {
 
-}
+// }
 
 ////////////////////////////////////////////////
