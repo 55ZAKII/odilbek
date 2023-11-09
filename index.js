@@ -36,6 +36,7 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 ////////////////////////////////////////////////
+
 const toUpperCase = (name) => {
     let res = name.split('')
     result = res.filter((val) => {
@@ -47,13 +48,18 @@ const toUpperCase = (name) => {
 const name = 'WebBraInAcademy'
 console.log(toUpperCase(name));
 
-const toUpperCas = (name) => {
-    let res = name.split('')
-    result = res.filter((val) => {
-        return val == val.toUpperCase()
-    }).join('')
-    return result 
-}
-
-const nam = 'WebBraInAcademy'
-console.log(toUpperCase(name));
+const data = {
+    id: 1,
+    name: 'hasan',
+    password: '1234'
+  };
+  
+  setTimeout((data) => {
+    if (data.password === '1234' && data.name === 'hasan') {
+      console.log('true');
+    } else {
+      console.log('parol notgri');
+    }
+  }, 1000, data);
+  
+  console.log('loading...');
